@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-
-# Nav2 integration with color detection
 import threading
 import sys, time
 import cv2
@@ -434,7 +431,6 @@ class Nav2ColorDetectionNode(Node):
 def main():
     rclpy.init()
     
-    # Create the node
     node = Nav2ColorDetectionNode()
     
     def signal_handler(sig, frame):
